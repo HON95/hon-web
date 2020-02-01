@@ -7,4 +7,4 @@ HUGO_DEB_FILE=https://github.com/gohugoio/hugo/releases/download/v${HUGO_RELEASE
 
 # Install Hugo
 curl "$HUGO_DEB_FILE" -o /tmp/hugo.deb
-dpkg -i /tmp/hugo.deb
+sudo dpkg -i /tmp/hugo.deb
