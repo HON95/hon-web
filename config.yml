@@ -1,0 +1,13 @@
+baseURL: "https://haavard.tech/"
+title: "HON"
+languageCode: "en-us"
+theme: "aerial"
+enableEmoji: true
+
+params:
+  name: "Håvard O. Nordstrand"
+  about: "TODO"
+  copyright: "Håvard O. Nordstrand"
+  favicon: "favicon.png"
+  # Disable the scrolling background by entering any string for bg_scroll. Enable by leaving bg_scroll empty.
+  bg_scroll: ""

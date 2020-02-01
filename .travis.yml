@@ -1,0 +1,27 @@
+# Travis CI config for hon-web
+
+# Required env vars:
+# - GITHUB_REPO
+# - GITHUB_BRANCH
+# - GITHUB_TOKEN
+
+dist: bionic
+language: minimal
+
+install:
+- ci/install.sh
+
+script:
+- ci/build.sh
+
+deploy:
+    on:
+        branch: master
+    skip_cleanup: true
+    provider: pages
+    local_dir: output
+    repo: $GITHUB_REPO
+    target_branch: $GITHUB_BRANCH
+    github_token: $GITHUB_TOKEN
+    committer_from_gh: true
+    keep_history: true
